@@ -1,7 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
-from users.forms import RegisterForm
+from .forms import RegisterForm
 def index(request):
     return render(request, 'index.html')
 
